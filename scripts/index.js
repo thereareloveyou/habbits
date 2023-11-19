@@ -210,12 +210,6 @@ function addHabbit(event) {
   rerender(maxId + 1);
 }
 
-function searchDay(event) {
-   const activeHabbit = habbits.find((habbit) => habbit.id === globalActiveHabbitId);
-   const rs = activeHabbit.days.filter((el) => el.comment === event.target.value)
-   rerender(globalActiveHabbitId)
-}
-
 /*init*/
 (() => {
   loadData();
